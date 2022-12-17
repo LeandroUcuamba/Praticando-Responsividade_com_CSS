@@ -1,0 +1,49 @@
+h1{
+    color: red;
+}
+
+/* Sintaxe */
+
+
+/* Usando o AND */
+/* Quando o tamanho da tela for menor que 500px, o h1 fica azul */
+@media screen and (max-width: 500px){
+    h1{
+        color: blue;
+    }
+    
+}
+
+/* Quando o tamanho da tela for maior que 500px, o h2 fica verde */
+@media screen and (min-width: 500px){
+    h2{
+        color: green;
+    }
+    
+}
+
+/* esse é o que mais aparece em projectos */
+/* é por padrão a representação do all */
+@media (max-width:400px){
+    h3{
+        color: yellow
+    }
+
+}
+
+/* intervalo de um comportamento da tela de 100px á 200px */
+@media (min-width:100px) AND (max-width:200px){
+    
+}
+
+/* Orentation -> é para trabalhar com a tela na horizontal */
+@media(orientation:landscape){
+   body{
+     color: red;
+   }
+}
+
+/* Usando o OR */
+@media(max-width:20px), (orientation:landscape){
+
+ }
